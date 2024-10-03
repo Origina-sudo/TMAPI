@@ -17,7 +17,7 @@ class Task(models.Model):
     description = models.TextField()
     due_date = models.DateField()
     priority = models.CharField(max_length=6, choices=PRIORITY_CHOICES)
-    status = models.CharField(max_length=8, choices=STATUS_CHOICES, default='Pending')
+    status = models.CharField(max_length=9, choices=STATUS_CHOICES, default='Pending')
     created_at = models.DateTimeField(auto_now_add=True)
     completed_at = models.DateTimeField(null=True, blank=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)

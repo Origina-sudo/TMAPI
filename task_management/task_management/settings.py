@@ -79,7 +79,7 @@ DATABASES = {
      'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'task_management_db',  # Name your database
-        'USER': 'Orinia_sudo', 
+        'USER': 'root', 
         'PASSWORD': 'Asphalt1234500#@',
         'HOST': 'localhost',
         'PORT': '3306',
